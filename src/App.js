@@ -10,22 +10,21 @@ import ContactUs from './component/Contact.js';
 
 function App() {
 	return (
+	<div>
+		<Navbar/>
 		
-		<div>
-			<Navbar/>
-
-                <Routes>
-                    <Route path="/" element={<GooglePlacesAutocomplete />} />
-                    <Route path="/display" element={<DisplayInput />} />
-                    <Route path="/contact" element={<ContactUs />} />
-                </Routes>
-
-			<footer className="footer">
-				<p className="text-footer">
-					Copyright ©-All rights are reserved
-				</p>
-			</footer>
-		</div>
+		<Routes>
+		    <Route path="/" element={<GooglePlacesAutocomplete />} />
+		    <Route path="/display" element={<DisplayInput />} />
+		    <Route path="/contact" element={<ContactUs />} />
+		</Routes>
+		
+		<footer className="footer">
+			<p className="text-footer">
+				Copyright ©-All rights are reserved
+			</p>
+		</footer>
+	</div>
 	);
 }
 
