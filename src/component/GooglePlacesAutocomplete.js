@@ -12,7 +12,7 @@ const GooglePlacesAutocomplete = () => {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCiRrdyEWMyEnD9MaBpsCXaUHZxabU93gU&libraries=places`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places`; //need to insert your actual API Key here to make it work, I deleted my own API Key as Google has sent a warning to me
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
